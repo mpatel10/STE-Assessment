@@ -1,0 +1,160 @@
+{
+	"id": "a623473e-42ed-4151-ba43-656494fe039f",
+	"name": "QA Challenge",
+	"timestamp": "2021-01-26T18:06:54.102Z",
+	"collection_id": "16233c3b-793c-4bef-a17d-b9b3e7ca83ff",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "90c1c383-242d-454b-a210-a556427eb549",
+			"name": "Add Employee",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees",
+			"time": 177,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Employee Added: Natasha Romanoff": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Employee Added: Natasha Romanoff": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Employee Added: Natasha Romanoff": true
+				}
+			]
+		},
+		{
+			"id": "337b5c0d-869c-4060-9631-b7a0f536ba6e",
+			"name": "Get Employee List",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees",
+			"time": 200,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"List of Employee after added Natasha Romanoff": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"List of Employee after added Natasha Romanoff": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"List of Employee after added Natasha Romanoff": true
+				}
+			]
+		},
+		{
+			"id": "21c73b9f-bb79-4762-b456-f8214741b345",
+			"name": "Update Employee",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees",
+			"time": 136,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Updated Emplyee Name: Wanda2 Maximoff": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Updated Emplyee Name: Wanda2 Maximoff": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				136
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Updated Emplyee Name: Wanda2 Maximoff": true
+				}
+			]
+		},
+		{
+			"id": "8d0e4cb5-be2c-4689-8bbb-f2e17cfac47c",
+			"name": "Delete Employee",
+			"url": "https://wmxrwq14uc.execute-api.us-east-1.amazonaws.com/Prod/api/employees/6b271741-7526-4cb8-80f8-d97b8646b7b6",
+			"time": 194,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 707,
+	"collection": {
+		"requests": [
+			{
+				"id": "90c1c383-242d-454b-a210-a556427eb549",
+				"method": "POST"
+			},
+			{
+				"id": "337b5c0d-869c-4060-9631-b7a0f536ba6e",
+				"method": "GET"
+			},
+			{
+				"id": "21c73b9f-bb79-4762-b456-f8214741b345",
+				"method": "PUT"
+			},
+			{
+				"id": "8d0e4cb5-be2c-4689-8bbb-f2e17cfac47c",
+				"method": "DELETE"
+			}
+		]
+	}
+}
